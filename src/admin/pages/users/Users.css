@@ -1,0 +1,30 @@
+.users-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 2%;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+.content-users {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  width: 100%;
+  height: 85%;
+  padding: 20px;
+  overflow: auto;
+  gap: 5px;
+}
+.accordion {
+  width: 100%;
+}
+.users-header {
+  margin-bottom: 2%;
+  color: gray;
+  font-weight: bold;
+  font-size: 16px;
+}
