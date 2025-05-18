@@ -1,0 +1,68 @@
+#root {
+  width: 100%;
+  min-height: 100vh;
+  height: auto;
+  margin: 0 auto;
+  padding: 0;
+  overflow: hidden;
+  text-align: center;
+}
+
+.profile-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #ffffff;
+  padding-top: 10%;
+  overflow: hidden;
+}
+
+.profile-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  gap: 20px;
+  overflow: auto;
+  flex-grow: 1;
+  max-height: calc(100vh - 10%);
+}
+.profile-address-area {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  justify-content: center;
+  width: 100%;
+  gap: 20px;
+  overflow: auto;
+  padding: 24px;
+  flex-grow: 1;
+}
+.address-area {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  width: 100%;
+  height: 100%;
+  gap: 20px;
+  max-height: 400px;
+  overflow-y: auto;
+  flex-grow: 1;
+}
+
+@media screen and (max-width: 768px) {
+  .profile-main {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 100%;
+    min-height: 100vh;
+    background-color: #ffffff;
+    padding-top: 0%;
+    overflow: hidden;
+  }
+}
