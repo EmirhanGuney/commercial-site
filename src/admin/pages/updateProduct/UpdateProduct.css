@@ -1,0 +1,91 @@
+/* UpdateProduct.css */
+
+/* Ana container */
+.update-product-container {
+  width: 100%;
+  margin: 40px auto;
+  padding: 24px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  max-height: 800px;
+  overflow: auto;
+}
+
+/* Başlıklar */
+.update-product-container h2 {
+  font-size: 24px;
+  margin-bottom: 24px;
+  text-align: center;
+  color: #333;
+}
+
+.update-product-container h3 {
+  font-size: 18px;
+  margin-bottom: 12px;
+  color: #444;
+}
+
+/* Form bölümleri */
+.update-product-container .form-section {
+  margin-bottom: 32px;
+}
+
+/* Label'lar */
+.update-product-container label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 500;
+  color: #333;
+}
+
+/* Input ve textarea'lar */
+.update-product-container input[type="text"],
+.update-product-container input[type="number"],
+.update-product-container input[type="file"],
+.update-product-container textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  background-color: #fff;
+  color: #333;
+  box-sizing: border-box;
+}
+
+/* Checkbox */
+.update-product-container input[type="checkbox"] {
+  transform: scale(1.2);
+  margin-top: 4px;
+}
+
+/* Textarea */
+.update-product-container .update-textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+/* Butonlar */
+.update-product-container button {
+  background-color: #0057d9;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  font-size: 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.update-product-container button:hover {
+  background-color: #0043b3;
+}
+
+/* Özel butonlar */
+.update-product-container .update-product-btn {
+  margin-top: 16px;
+  width: 100%;
+}
