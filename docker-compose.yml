@@ -19,7 +19,7 @@ services:
     depends_on:
       - mongo
     environment:
-      - MONGO_URI=mongodb://mongo:27017/commercial-site-db
+      - DB_URI=mongodb://mongo:27017/RovaDB
 
   mongo:
     image: mongo:6

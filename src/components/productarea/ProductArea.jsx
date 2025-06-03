@@ -5,10 +5,10 @@ import "./ProductArea.css";
 function ProductArea({ products, refreshProducts }) {
   return (
     <div className="product-area">
-      {Array.from(products).map((product) => (
+      {Array.from(products || [])?.map((product) => (
         <ProductCard
           product={product}
-          key={product.id}
+          key={product?.id}
           refreshProducts={refreshProducts}
         />
       ))}

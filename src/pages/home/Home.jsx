@@ -18,10 +18,10 @@ function Home() {
     setLoading(true);
     const result = await getProducts({
       page: selectedPage,
-      limit
+      limit,
     });
-    setProducts(result.products);
-    setMaxPage(result.pagination.totalPage)
+    setProducts(result?.products);
+    setMaxPage(result?.pagination?.totalPage);
     setLoading(false);
   };
 
@@ -29,7 +29,6 @@ function Home() {
     getSelectedProducts();
   }, [selectedPage]);
 
-  
   const handlePrevious = () => {
     if (selectedPage > 1) {
       setSelectedPage(selectedPage - 1);
@@ -62,16 +61,21 @@ function Home() {
             <Loader />{" "}
           </div>
         ) : (
-          <ProductArea products={products} refreshProducts={getSelectedProducts} />
+          <ProductArea
+            products={products}
+            refreshProducts={getSelectedProducts}
+          />
         )}
         <div className="home-navigate-buttons">
-        <button onClick={handlePrevious} disabled={selectedPage === 1}>
-        Geri
-      </button>
+          <button onClick={handlePrevious} disabled={selectedPage === 1}>
+            Geri
+          </button>
 
-      <span>{selectedPage} / {maxPage}</span>
+          <span>
+            {selectedPage} / {maxPage}
+          </span>
 
-      <button onClick={handleNext}>İleri</button>
+          <button onClick={handleNext}>İleri</button>
         </div>
         <Footer />
       </div>

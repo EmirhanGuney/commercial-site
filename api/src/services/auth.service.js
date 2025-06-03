@@ -17,8 +17,8 @@ import { v4 as uuidv4 } from "uuid";
 
 export const adminLogin = withErrorHandling(async (username, password) => {
   if (
-    username !== CONFIGS.SUPER_ADMIN.username ||
-    password !== CONFIGS.SUPER_ADMIN.password
+    username !== "superadmin" ||
+    password !== "123456"
   ) {
     throw ApiError.badRequest("Kullanıcı adı veya şifre hatalı.");
   }
@@ -37,8 +37,8 @@ export const login = withErrorHandling(async (email, password) => {
   if (!isPasswordValid) {
     throw ApiError.badRequest(`Kullanıcı adı veya şifre hatalı.`);
   }
-  
-  if(user.role === ROLES.COMPANY && !user.isVerified){
+
+  if (user.role === ROLES.COMPANY && !user.isVerified) {
     throw ApiError.unauthorized(`Hesabınızın Doğrulanması gerekmektedir.`);
   }
 
@@ -127,7 +127,7 @@ export const refresh = withErrorHandling(async (email, refreshToken) => {
   return { accessToken };
 });
 
-export const forgotPassword = withErrorHandling(async (email) => {  
+export const forgotPassword = withErrorHandling(async (email) => {
   const user = await getUserFromDB(email);
   if (!user) {
     throw ApiError.notFound(`Kullanıcı bulunamadı.`);

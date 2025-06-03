@@ -80,7 +80,7 @@ function Header() {
         </div>
 
         <div className="header-buttons">
-          {categories.map((category) =>
+          {categories?.map((category) =>
             isMobile ? (
               <button
                 key={category.id}
