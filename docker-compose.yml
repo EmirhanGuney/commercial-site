@@ -20,6 +20,8 @@ services:
       - mongo
     environment:
       - DB_URI=mongodb://mongo:27017/RovaDB
+    volumes:
+      - ./api/uploads:/usr/src/app/uploads
 
   mongo:
     image: mongo:6
