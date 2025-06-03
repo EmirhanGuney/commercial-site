@@ -1,4 +1,5 @@
-export const BASE_URL = "https://nanocamkesmemakinesi.com/api";
+//export const BASE_URL = "https://nanocamkesmemakinesi.com/api";
+export const BASE_URL = "http://localhost:3000/api";
 
 const pre_namespace_auth = "auth";
 const pre_namespace_user = "users";
