@@ -8,7 +8,7 @@ Bu proje, çok katmanlı bir mimariyle geliştirilmiş olup aşağıda listelene
 # Projeyi klonlayın
 git clone https://github.com/EmirhanGuney/commercial-site.git
 # Proje dizinine geçin
-cd commercial-site  # muhtemelen zaten o dizindesinizdir. # main branch te veya development branchinde projeyi ayağa kaldırabilirsiniz.
+cd commercial-site  # muhtemelen zaten o dizindesinizdir. # main branch te veya development branchinde projeyi çalıştırınız.
 
 
 
