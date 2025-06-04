@@ -1,12 +1,31 @@
-# React + Vite
+# commercial-site
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Bu proje, çok katmanlı bir mimariyle geliştirilmiş olup aşağıda listelenen özellikleri içermektedir. Projenin kurulumu, kullanımı ve her bir özelliğin teknik detayları bu dökümantasyonda yer almaktadır.
 
-Currently, two official plugins are available:
+## 🚀 Kurulum
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+```bash
+# Projeyi klonlayın
+git clone https://github.com/EmirhanGuney/commercial-site.git
+# Proje dizinine geçin
+cd commercial-site  # muhtemelen zaten o dizindesinizdir
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+# Projeyi başlatın
+docker-compose up  # veya docker-compose up --build
+
+
+## 👥 Çalışanlar ve Sorumlulukları
+
+| No  | Özellik                        | Sorumlu Kişi   | Branch                       |
+|-----|--------------------------------|----------------|------------------------------|
+| 1   | Presentation Layer (UI)        | Emirhan Güney  | Feature/Emirhanguney         |
+| 2   | Business Layer (OOP)           | Dilara Ulaş    | Feauture/Dilaraulas          |
+| 3   | Data Layer (ORM)               | Mustafa Peker  | Feature/Mustafaserhatpeker   |
+| 4   | Web Service Implementation     | Emirhan Güney  | Feature/Emirhanguney         |
+| 5   | RBAC Implementation            | Emirhan Güney  | fFeature/Emirhanguney        |
+| 6   | Authorization Implementation   | Mustafa Peker  | Feature/Mustafaserhatpeker   |
+| 7   | Session / Cookie Management    | Dilara Ulaş    | Feauture/Dilaraulas          |
+| 8   | Extension / 3rd Party Library  | Emirhan Güney  | Feature/Emirhanguney         |
+| 9   | Web Security                   | Mustafa Peker  | Feature/Mustafaserhatpeker   |
+
