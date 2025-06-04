@@ -1,0 +1,60 @@
+.bulkoperations-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+.content-bulkoperations {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  border-radius: 10px;
+}
+.sub-category-button {
+  background-color: #c2c2c2;
+  color: white;
+  border: none;
+  padding: 5px;
+  border-radius: 10px;
+  min-width: 100px;
+}
+
+.sub-category-button.selected {
+  background-color: #4caf50;
+  color: white;
+}
+.bulk-operation-actions {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  width: 100%;
+  gap: 10px;
+  min-height: auto;
+  flex-shrink: 0;
+}
+.bulk-operation-actions input {
+  color: #000000;
+  border: 1px solid #b8b5b5;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  width: 40%;
+  margin-top: 20px;
+}
+
+.bulk-operation-btn {
+  border: none;
+  background-color: #86a760;
+  padding: 10px;
+  color: white;
+  height: 50px;
+  border-radius: 10px;
+}
